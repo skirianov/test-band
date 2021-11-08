@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test - REST requests</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Test - Play tracks</h1>
+    <a href="index.html">Back to first page</a>
+    <div class="main">
+      <div class="music-container" id="music-container">
+        <div class="music-info">
+          <h4 id="title">New Wave Kit</h4>
+          <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+        <audio src="assets/audio/new-wave-kit.ogg" id="audio"></audio>
+        <div class="navigation">
+          <button id="prev" class="action-btn">
+            <<
+          </button>
+          <button id="play" class="action-btn action-btn-big play">
+            Play
+          </button>
+          <button id="next" class="action-btn">
+            >>
+          </button>
+        </div>
+      </div>
+      <div class="track-selector">
+        <h3>Select track</h3>
+        <div class="track-box">
+          <button class="track selected" value="new-wave-kit">New Wave Kit</button>
+          <button class="track" value="synth-organ">Synth Organ</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="play.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test - REST requests</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Test - GET all posts requests from API</h1>
+    <a href="./play.html">Go to next test</a>
+    <div class="btn-container">
+      <button id="get-posts">GET POSTS</button>
+    </div>
+    <div class="sort-select">
+      <label for="sort-select">Sort by:</label>
+      <select name="sort" id="sort-select">
+        <option value=""></option>
+        <option value="title descend">Sort by Title ↓</option> 
+        <option value="title ascend">Sort by Title ↑</option>
+        <option value="id descend">Sort by User ID ↓</option>
+        <option value="id ascend">Sort by User ID ↑</option>
+      </select>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>

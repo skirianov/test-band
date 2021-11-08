@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+a {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+#get-posts {
+  background-color: rgb(92, 201, 166);
+  outline: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+}
+
+.sort-select {
+  display: none;
+  margin: 12px;
+}
+
+.visible {
+  display: block;
+}
+
+#table {
+  width: 80%;
+  margin: auto;
+  border-spacing: 0;
+  text-align: center;
+}
+
+#table th {
+  background-color: lightgray;
+  border: 1px solid black;
+  padding: 6px;
+  text-transform: uppercase;
+}
+
+.highlighted {
+  background-color: aquamarine;
+}
+
+.main {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+h3 {
+  text-align: center;
+  margin: 8px;
+}
+
+.track-selector {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  width: 400px;
+  border: 1px solid lightgray;
+}
+
+.track {
+  height: 40px;
+  width: 392px;
+  border: none;
+  background-color: rgb(248, 248, 248);
+  margin: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.track:hover {
+  background-color: greenyellow;
+}
+
+.selected {
+  background-color: lightgreen;
+}
+
+.music-container {
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  padding: 20px 30px;
+  position: relative;
+  margin: auto;
+  z-index: 10;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* styling the navigation buttons */
+.action-btn {
+  border: 0;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.action-btn:focus {
+  outline: 0;
+}
+
+/* styling the music-info div by placing it under the music container */
+.music-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  text-align: center;
+}
+
+/* styling the song progress container */
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 100%;
+}
+
+/* styling the actual progress bar and making it flow along with the song*/
+.progress {
+  background-color: #fe8daa;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.05s linear;
+}
